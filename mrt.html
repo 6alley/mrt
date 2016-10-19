@@ -4,13 +4,21 @@
   <meta charset="UTF-8">
   <title>MRT</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 <body>
 
+
+  <select id="station">
+    <option value="108">中央公園</option>
+    <option value="114">生態園區</option>
+
+  </select>
+
   <!-- 108 -->
   <div class="r9">
-    <h2><span>R9</span>中央公園</h2>
-    <div id="output108" class="output">
+    <h2 id="sta_name"></h2>
+    <div id="output" class="output">
       <div class="south">
         <div class="descr station-south-descr"></div>
         <div class="time">
@@ -34,7 +42,7 @@
 
 
   <!-- 114 -->
-  <div class="r15">
+  <!-- <div class="r15">
     <h2><span>R15</span>生態園區</h2>
     <div id="output114" class="output">
       <div class="south">
@@ -56,13 +64,13 @@
       </div>
     </div>
   </div>
-
+ -->
 
 
 
 
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="main.js"></script>
-  
+
 </body>
 </html>
