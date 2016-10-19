@@ -81,6 +81,7 @@ html,body {
   .north {
     width: 100%;
     flex: 0 1 100%;
+    margin-bottom: 10px;
   }
 }
 .descr {
