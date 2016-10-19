@@ -56,6 +56,7 @@ html,body {
 @media screen and (max-width: 39.9375em) {
   .output {
     width: 96%;
+    flex-wrap: wrap;
   }
 }
 
@@ -74,6 +75,12 @@ html,body {
   background: #1d2634;
   /*box-shadow: 0px 4px 0px rgba(255,255,255,0.55), 0 8px 5px rgba(0,0,0,0.6);*/
   box-shadow: 0px 4px 0px rgba(0,0,0,0.25), 0 8px 5px rgba(0,0,0,0.26);
+}
+@media screen and (max-width: 39.9375em) {
+  .south,
+  .north {
+    width: 100%;
+  }
 }
 .descr {
   font-size: 24px;
