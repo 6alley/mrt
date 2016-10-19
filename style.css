@@ -80,6 +80,7 @@ html,body {
   .south,
   .north {
     width: 100%;
+    flex: 0 1 100%;
   }
 }
 .descr {
