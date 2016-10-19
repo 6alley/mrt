@@ -12,7 +12,7 @@ var getData108 = function() {
 
   $.ajax({
     type: 'GET',
-    url: 'http://data.kaohsiung.gov.tw/Opendata/MrtJsonGet.aspx?site=108',
+    url: 'https://data.kaohsiung.gov.tw/Opendata/MrtJsonGet.aspx?site=108',
     success: function(station) {
       mrt = JSON.parse(reg.exec(station)[0]);
       console.log('success 108',mrt);
@@ -43,7 +43,7 @@ var getData114 = function() {
 
   $.ajax({
     type: 'GET',
-    url: 'http://data.kaohsiung.gov.tw/Opendata/MrtJsonGet.aspx?site=114',
+    url: 'https://data.kaohsiung.gov.tw/Opendata/MrtJsonGet.aspx?site=114',
     success: function(station) {
       mrt = JSON.parse(reg.exec(station)[0]);
       console.log('success 114',mrt);
