@@ -7,6 +7,12 @@ html,body {
   width: 480px;
   margin: 50px auto 0px;
 }
+@media screen and (max-width: 39.9375em) {
+  .r9 {
+    width: 96%;
+    margin: 50px auto 0px;
+  }
+}
 .r9 h2 {
   color: #fff;
   font-size: 38px;
@@ -21,6 +27,12 @@ html,body {
 .r15 {
   width: 480px;
   margin: 50px auto 0px;
+}
+@media screen and (max-width: 39.9375em) {
+  .r15 {
+    width: 96%;
+    margin: 50px auto 0px;
+  }
 }
 .r15 h2 {
   color: #fff;
@@ -40,6 +52,11 @@ html,body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 39.9375em) {
+  .output {
+    width: 96%;
+  }
 }
 
 .south,
