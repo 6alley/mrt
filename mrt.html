@@ -3,18 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>MRT</title>
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+<body onload="getTime()">
 
-
+  <!-- 101~124 / 201~214-->
   <select id="station">
-    <option value="108">中央公園</option>
-    <option value="114">生態園區</option>
+<option value="101">小港</option>
+<option value="102">高雄國際機場</option>
+<option value="103">草衙</option>
+<option value="104">前鎮高中</option>
+<option value="105">凱旋</option>
+<option value="106">獅甲</option>
+<option value="107">三多商圈</option>
+<option value="108">中央公園</option>
+<option value="109">美麗島</option>
+<option value="110">高雄車站</option>
+<option value="111">後驛</option>
+<option value="112">凹子底</option>
+<option value="113">巨蛋</option>
+<option value="114">生態園區</option>
+<option value="115">左營</option>
+<option value="116">世運</option>
+<option value="117">油廠國小</option>
+<option value="118">楠梓加工區</option>
+<option value="119">後勁</option>
+<option value="120">都會公園</option>
+<option value="121">青埔</option>
+<option value="122">橋頭糖廠</option>
+<option value="123">橋頭火車站</option>
+<option value="124">南崗山</option>
+
+<option value="201">西子灣</option>
+<option value="202">鹽埕埔</option>
+<option value="203">市議會</option>
+<option value="204">美麗島</option>
+<option value="205">信義國小</option>
+<option value="206">文化中心</option>
+<option value="207">五塊厝</option>
+<option value="208">技擊館</option>
+<option value="209">衛武營</option>
+<option value="210">鳳山西站</option>
+<option value="211">鳳山</option>
+<option value="212">大東</option>
+<option value="213">鳳山國中</option>
+<option value="214">大寮</option> 
   </select>
 
-  <!-- 108 -->
+
   <div class="r9">
     <h2 id="sta_name"></h2>
     <div id="output" class="output">
@@ -39,36 +82,10 @@
   </div>
 
 
-
-  <!-- 114 -->
-  <!-- <div class="r15">
-    <h2><span>R15</span>生態園區</h2>
-    <div id="output114" class="output">
-      <div class="south">
-        <div class="descr station-south-descr"></div>
-        <div class="time">
-          <div class="arrival station-south-arrival"><span></span></div>
-          <div class="next station-south-next"></div>
-        </div>
-
-      </div>
-
-      <div class="north">
-        <div class="descr station-north-descr"></div>
-        <div class="time">
-          <div class="arrival station-north-arrival"></div>
-          <div class="next station-north-next"></div>
-        </div>
-
-      </div>
-    </div>
-  </div>
- -->
-
-
-
-
   <script type="text/javascript" src="jquery.js"></script>
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
+
   <script type="text/javascript" src="main.js"></script>
 
 </body>

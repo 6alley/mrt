@@ -1,5 +1,4 @@
-
-setInterval(function() {
+var getTime = function() {
     var reg = /\{[\s\S]+\}/;
     var mrt = {};
     var sta = $("#station").val();
@@ -31,5 +30,8 @@ setInterval(function() {
         $stationNorthNext.text(mrt.MRT[1].next_arrival);
       }
     });
-  }, 5000
-);
+  }
+
+
+
+setInterval(getTime, 5000);

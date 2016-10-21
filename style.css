@@ -1,6 +1,7 @@
 html,body {
   /*background: #252d3f;*/
-  background: #0c2731;
+  background: #0c2731!important;
+  font-family: 微軟正黑體, "Microsoft JhengHei", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 .r9 {
@@ -56,7 +57,8 @@ html,body {
 @media screen and (max-width: 39.9375em) {
   .output {
     width: 96%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -65,7 +67,9 @@ html,body {
   /*color: #424448;*/
   color: #fff;
   font-size: 28px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   /*border: 1px solid #dedede;*/
   margin: 0 10px;
   /*padding-top: 20px;*/
@@ -80,7 +84,9 @@ html,body {
   .south,
   .north {
     width: 100%;
-    flex: 0 1 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     margin-bottom: 10px;
   }
 }
@@ -107,9 +113,10 @@ html,body {
   font-size: 84px;
   text-align: right;
   position: relative;
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
   text-shadow: 1px 0px 0px rgba(0,0,0,0.36);
   padding: 0 40px;
+  font-family: 'Arvo';
 }
 .arrival::before {
   content: "即將抵達: ";
@@ -142,6 +149,8 @@ html,body {
 
 #station {
   margin: 30px auto 20px;
+  display: block;
+  width: 200px;
 }
 select {
   height: 2.4375rem;
@@ -156,14 +165,14 @@ select {
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url(data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.…nts='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>);
-  -webkit-background-size: 9px 6px;
   background-size: 9px 6px;
   background-position: right -1rem center;
-  -webkit-background-origin: content-box;
   background-origin: content-box;
   background-repeat: no-repeat;
   padding-right: 1.5rem;
+}
+select:focus {
+  outline: none;
 }
 option {
     font-weight: normal;
