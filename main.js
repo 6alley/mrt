@@ -1,3 +1,6 @@
+var selectStation = document.getElementById('station');
+
+
 var getTime = function() {
     var reg = /\{[\s\S]+\}/;
     var mrt = {};
@@ -32,6 +35,7 @@ var getTime = function() {
     });
   }
 
+selectStation.addEventListener('change', getTime);
 
 
 setInterval(getTime, 5000);
