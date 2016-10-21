@@ -21,6 +21,11 @@ html,body {
   font-weight: 400;
   margin-bottom: 0;
 }
+@media screen and (max-width: 39.9375em) {
+  .r9 h2 {
+    text-align: center;
+  }
+}
 .r9 h2 span {
   font-weight: normal;
   margin-right: 10px;
@@ -48,7 +53,6 @@ html,body {
 }
 .output {
   width: 480px;
-  height: 280px;
   padding: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,9 +150,41 @@ html,body {
 }
 
 
+.station-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.station-wrap span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .station-wrap {
+    flex-wrap: wrap;
+  }
+  .station-wrap > * {
+    width: 100%;
+  }
+  .station-wrap span {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+
+
 
 #station {
-  margin: 30px auto 20px;
   display: block;
   width: 200px;
 }
@@ -156,7 +192,7 @@ select {
   height: 2.4375rem;
   padding: 0.5rem;
   border: 1px solid #cacaca;
-  margin: 0 0 1rem;
+  margin: 0;
   font-size: 1rem;
   font-family: inherit;
   line-height: normal;
