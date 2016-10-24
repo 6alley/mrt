@@ -6,12 +6,12 @@ html,body {
 
 .r9 {
   width: 480px;
-  margin: 50px auto 0px;
+  margin: 20px auto 0px;
 }
 @media screen and (max-width: 39.9375em) {
   .r9 {
     width: 96%;
-    margin: 50px auto 0px;
+    margin: 20px auto 0px;
   }
 }
 .r9 h2 {
@@ -60,7 +60,7 @@ html,body {
 }
 @media screen and (max-width: 39.9375em) {
   .output {
-    width: 96%;
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -92,6 +92,9 @@ html,body {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin-bottom: 10px;
+  }
+  .south {
+    margin-bottom: 30px;
   }
 }
 .descr {
@@ -154,13 +157,16 @@ html,body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+          align-items: center;
   margin-top: 40px;
+  width: 480px;
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
 .station-wrap span {
@@ -171,9 +177,12 @@ html,body {
 @media screen and (max-width: 39.9375em) {
   .station-wrap {
     flex-wrap: wrap;
+    padding-left: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .station-wrap > * {
-    width: 100%;
+    width: 90%!important;
   }
   .station-wrap span {
     text-align: center;
@@ -216,4 +225,25 @@ option {
     white-space: pre;
     min-height: 1.2em;
     padding: 0px 2px 1px;
+}
+
+#NowTime {
+  font-size: 48px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+        justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+        align-items: center;
+  text-align: center;
+  margin: 30px auto 50px;
+}
+#NowTime:before {
+  display: inline-block;
+  content: "現在時間：";
+  font-size: 18px;
 }

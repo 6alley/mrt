@@ -1,5 +1,6 @@
-var selectStation = document.getElementById('station');
 
+
+var selectStation = document.getElementById('station');
 
 var getTime = function() {
     var reg = /\{[\s\S]+\}/;
@@ -33,9 +34,16 @@ var getTime = function() {
         $stationNorthNext.text(mrt.MRT[1].next_arrival);
       }
     });
+
+
+    // 現在時間
+    var Today = new Date();
+    var time = Today.getHours() + ":" + Today.getMinutes() + ":" + Today.getSeconds();
+    console.log(time);
+    $('#NowTime').text(time);
   }
 
 selectStation.addEventListener('change', getTime);
 
 
-setInterval(getTime, 5000);
+setInterval(getTime, 10000);
