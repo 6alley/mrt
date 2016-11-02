@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="style.css">
 
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWOV_F5Ss674LVaUmBPHK_EEf5TWlL0Y&signed_in=true&callback=initMap"
+      async defer>
+  </script>
 </head>
 <body onload="getTime();">
 
@@ -114,11 +117,6 @@
   <script type="text/javascript" src="main.js"></script>
 
 <script type="text/javascript">
-<script>
-// Note: This example requires that you consent to location sharing when
-// prompted by your browser. If you see the error "The Geolocation service
-// failed.", it means you probably did not give permission for the browser to
-// locate you.
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -154,9 +152,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                         'Error: Your browser doesn\'t support geolocation.');
 }
 
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWOV_F5Ss674LVaUmBPHK_EEf5TWlL0Y&signed_in=true&callback=initMap"
-    async defer>
 </script>
 
 
