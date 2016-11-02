@@ -72,6 +72,11 @@ html,body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 64em) {
+  .wrap {
+    height: 100%;
+  }
+}
 
 .r9 {
   margin: 20px auto 0px;
@@ -344,7 +349,7 @@ html,body {
 .arrival {
   text-align: center;
   font-size: 240px;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,1);
   position: relative;
   text-shadow: 1px 0px 0px rgba(0,0,0,0.36);
   /*padding: 0 0 0 70px;*/
