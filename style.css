@@ -469,6 +469,8 @@ option {
 
 #map {
   height: 300px;
-	width: 100%;
-	background: yellow;
+	width: 80%;
+  max-width: 1200px;
+	background: gray;
+	margin: 50px auto;
 }
